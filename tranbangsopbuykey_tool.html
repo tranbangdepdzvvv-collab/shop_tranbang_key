@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#080511">
+<title>TRANBANGSOPBUYKEY — Bypass Tool</title>
+<style>
+:root{
+  --bg:#07050d; --panel:#111020; --panel2:#17152a; --line:#30234c;
+  --text:#f4edff; --muted:#9c8ebc; --accent:#b13cff; --accent2:#6f35ff;
+}
+*{box-sizing:border-box}
+html{min-height:100%;background:var(--bg)}
+body{
+  margin:0;min-height:100vh;color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  background:radial-gradient(ellipse at 50% 0%,#291044 0%,#10091b 32%,var(--bg) 70%);
+}
+header{text-align:center;padding:34px 18px 24px}
+.logo{
+  width:90px;height:90px;margin:0 auto 22px;border-radius:27px;
+  display:grid;place-items:center;font-size:48px;
+  background:linear-gradient(140deg,#d44dff,#6630e8);
+  box-shadow:0 0 36px #a22cff55;
+}
+.brand{font-weight:900;font-size:clamp(25px,7vw,36px);letter-spacing:2px;line-height:1.15}
+.brand span{color:#d28aff}
+.subtitle{color:var(--muted);font-size:14px;margin-top:12px;line-height:1.5}
+main{width:min(100%,720px);margin:auto;padding:0 16px 26px}
+.card{
+  background:linear-gradient(145deg,rgba(25,22,46,.97),rgba(12,11,25,.98));
+  border:1px solid var(--line);border-radius:27px;padding:24px 22px;
+  margin:18px 0;box-shadow:0 12px 30px #0003;
+}
+.section-title{
+  margin:0 0 22px;color:#a99acb;font-size:15px;font-weight:800;
+  letter-spacing:3px;display:flex;align-items:center;gap:12px;
+}
+.section-title:before{content:"";height:25px;width:5px;border-radius:5px;background:linear-gradient(#e26bff,#713bff)}
+.sites{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.site{
+  min-height:62px;border:1px solid #3c315e;background:#19172b;color:#d6c9f1;
+  border-radius:20px;font-size:15px;font-weight:650;padding:12px 8px;
+  cursor:pointer;overflow-wrap:anywhere;transition:.15s;
+}
+.site.selected{border-color:#c45aff;background:#32134a;color:#fff;box-shadow:0 0 16px #a12cff30}
+.hint{text-align:center;color:#81739f;font-size:13px;line-height:1.5;margin:18px 0 2px}
+input{
+  display:block;width:100%;min-height:72px;border-radius:21px;padding:18px 20px;
+  color:white;background:#0b0a19;border:1px solid #3a2c5d;font:16px inherit;
+  font-size:16px;outline:none;
+}
+input:focus{border-color:#ba55ff;box-shadow:0 0 0 3px #a42cff20}
+input::placeholder{color:#71668f}
+.primary{
+  width:100%;min-height:76px;margin-top:18px;border:0;border-radius:21px;
+  background:linear-gradient(100deg,#d34cff,#713bff);color:white;
+  font-size:21px;font-weight:900;letter-spacing:1px;cursor:pointer;
+  box-shadow:0 10px 28px #8d2cff35;
+}
+.primary:active{transform:scale(.99)}
+.status{margin-top:15px;font-size:14px;color:#cdb8ed;line-height:1.6;overflow-wrap:anywhere;white-space:pre-wrap}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat{padding:17px;border-radius:17px;background:#17152a;border:1px solid #30264c}
+.stat-label{font-size:13px;color:var(--muted)}
+.stat-value{font-size:23px;font-weight:850;color:#d18aff;margin-top:8px}
+.anime-strip{display:flex;align-items:center;gap:14px;margin:0 0 18px}
+.anime-strip img{width:76px;height:76px;object-fit:cover;border-radius:20px;border:2px solid #a43cff;box-shadow:0 0 18px #9b37ff45;background:#211033}
+.anime-copy b{display:block;color:#e4c1ff;font-size:15px;margin-bottom:6px}
+.anime-copy span{font-size:12px;color:var(--muted);line-height:1.5}
+footer{text-align:center;color:#796b95;font-size:12px;padding:10px 20px 30px}
+@media(max-width:390px){
+  .card{padding:20px 16px;border-radius:23px}
+  .site{font-size:13px;min-height:58px}
+  .section-title{letter-spacing:2px;font-size:13px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">⚡</div>
+  <div class="brand">TRANBANGSOP<span>BUYKEY</span></div>
+  <div class="subtitle">CÔNG CỤ XỬ LÝ LIÊN KẾT · ANIME NEON EDITION</div>
+</header>
+
+<main>
+  <section class="card">
+    <h2 class="section-title">TRANG HỖ TRỢ</h2>
+    <div class="sites" id="sites">
+      <button class="site" data-domain="gtraffic.io">Gtraffic.io</button>
+      <button class="site" data-domain="link4m.com">Link4m</button>
+      <button class="site" data-domain="layma.net">Layma.net</button>
+      <button class="site" data-domain="traffic4k.com">Traffic4k.com</button>
+      <button class="site" data-domain="site2s.com">Site2s.com</button>
+      <button class="site" data-domain="bbmkt.com">Bbmkt.com</button>
+      <button class="site" data-domain="system.traffichub.vn">system.traffichub.vn</button>
+      <button class="site" data-domain="app.trafficviet.vn">app.trafficviet.vn</button>
+      <button class="site" data-domain="phienchoso.com">Phienchoso.com</button>
+    </div>
+    <div class="hint">Chọn tên miền để đánh dấu dịch vụ bạn muốn kiểm tra.</div>
+  </section>
+
+  <section class="card">
+    <div class="anime-strip">
+      <img id="anime" src="https://placehold.co/200x200/211033/e7b7ff?text=ANIME" alt="Anime">
+      <div class="anime-copy"><b>TRANBANGSOPBUYKEY TOOL</b><span>Giao diện tím đen · Tối ưu cho Safari iPhone</span></div>
+    </div>
+    <h2 class="section-title">NHẬP LINK CẦN XỬ LÝ</h2>
+    <input id="url" type="url" inputmode="url" autocomplete="url" placeholder="Dán URL của bạn (https://...)">
+    <button class="primary" id="check">⚡ KIỂM TRA LINK</button>
+    <div id="status" class="status" aria-live="polite">Nhập một URL để kiểm tra định dạng.</div>
+    <button class="site" id="open" style="width:100%;margin-top:12px;display:none">MỞ LIÊN KẾT ĐÃ KIỂM TRA ↗</button>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title">THỐNG KÊ PHIÊN NÀY</h2>
+    <div class="stats">
+      <div class="stat"><div class="stat-label">Số link đã kiểm tra</div><div class="stat-value" id="count">0</div></div>
+      <div class="stat"><div class="stat-label">Trạng thái công cụ</div><div class="stat-value" style="font-size:18px">SẴN SÀNG</div></div>
+    </div>
+  </section>
+  <section class="card">
+    <h2 class="section-title">HƯỚNG DẪN SỬ DỤNG</h2>
+    <div class="status">1. Dán URL vào ô nhập bên trên.
+2. Nhấn “KIỂM TRA LINK”.
+3. Kiểm tra kỹ tên miền trước khi mở.
+4. Công cụ này kiểm tra định dạng URL và mở link; không tự vượt CAPTCHA hoặc cơ chế bảo vệ của website.</div>
+  </section>
+</main>
+<footer>© 2026 TRANBANGSOPBUYKEY · MADE FOR MOBILE</footer>
+
+<script>
+const $ = id => document.getElementById(id);
+let selectedDomain = "";
+let checkedUrl = "";
+let count = 0;
+
+document.querySelectorAll(".site[data-domain]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".site[data-domain]").forEach(b => b.classList.remove("selected"));
+    btn.classList.add("selected");
+    selectedDomain = btn.dataset.domain;
+    $("status").textContent = "Đã chọn dịch vụ: " + selectedDomain + ". Dán URL tương ứng để kiểm tra.";
+  });
+});
+
+$("check").addEventListener("click", () => {
+  checkedUrl = "";
+  $("open").style.display = "none";
+  const raw = $("url").value.trim();
+  if (!raw) { $("status").textContent = "⚠️ Hãy dán URL vào ô phía trên."; return; }
+
+  let u;
+  try { u = new URL(raw); }
+  catch { $("status").textContent = "❌ URL không hợp lệ. Hãy nhập đầy đủ, ví dụ https://example.com"; return; }
+
+  if (!["http:", "https:"].includes(u.protocol) || !u.hostname.includes(".")) {
+    $("status").textContent = "❌ Chỉ chấp nhận URL website HTTP/HTTPS hợp lệ.";
+    return;
+  }
+
+  checkedUrl = u.href;
+  count++;
+  $("count").textContent = count;
+  $("status").textContent = "✅ URL đúng định dạng.\nTên miền: " + u.hostname + "\nHãy tự xác nhận bạn tin tưởng website này trước khi mở.";
+  $("open").style.display = "block";
+});
+
+$("open").addEventListener("click", () => {
+  if (!checkedUrl) return;
+  window.open(checkedUrl, "_blank", "noopener,noreferrer");
+});
+
+// Tải ảnh anime từ API công khai; nếu không tải được, ảnh dự phòng vẫn hiển thị.
+fetch("https://api.waifu.pics/sfw/waifu")
+  .then(r => { if (!r.ok) throw new Error(); return r.json(); })
+  .then(data => { if (data.url) $("anime").src = data.url; })
+  .catch(() => {});
+</script>
+</body>
+</html>
